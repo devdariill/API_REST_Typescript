@@ -22,3 +22,4 @@ const x = require('') commonjs
 "noImplicitReturns": true,  
 "noFallthroughCasesInSwitch": true,
 
+Contratos (...params)
