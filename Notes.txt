@@ -1,5 +1,7 @@
 https://www.youtube.com/watch?v=ZpY5KdGQvwI&t=2009s&ab_channel=midudev
 
+express-validator // for errors enum interfaz http request
+
 pnpm add typescript
 
 "scripts": {
