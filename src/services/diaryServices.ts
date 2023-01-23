@@ -1,6 +1,6 @@
 import diaryData from './diaries.json' // "resolveJsonModule":true // import json ts
 // import diaryData from "./_diaries"  // 1
-import { DiaryEntry, newDiaryEntry, NonSensitiveDiaryEntry } from '../types' // import type ts
+import { DiaryEntry, NewDiaryEntry, NonSensitiveDiaryEntry } from '../types' // import type ts
 
 const diaries: DiaryEntry[] = diaryData as DiaryEntry[]
 // const diaries  = diaryData
@@ -25,10 +25,10 @@ export const getEntriesWithoutSesitiveInfo = (): NonSensitiveDiaryEntry[] => {
     visibility
   }))
 }
-export const addDiary = (newDiaryEntry: newDiaryEntry): DiaryEntry => {
+export const addDiary = (NewDiaryEntry: NewDiaryEntry): DiaryEntry => {
   const newDiary = {
     id: Math.max(...diaries.map((d) => d.id)) + 1,
-    ...newDiaryEntry
+    ...NewDiaryEntry
   }
   diaries.push(newDiary)
   return newDiary
