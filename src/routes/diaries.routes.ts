@@ -8,7 +8,7 @@ router.get('/', (_, res) => {
 })
 router.get('/:id', (req, res) => {
   const diary = diaryServices.fintById(+req.params.id)
-  return diary != null ? res.send(diary) : res.sendStatus(404)
+  return diary !== null ? res.send(diary) : res.sendStatus(404)
   //   res.send(diary?.comment)
 })
 router.post('/', (_, res) => {

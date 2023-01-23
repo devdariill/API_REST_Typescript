@@ -8,9 +8,14 @@ const diaries: DiaryEntry[] = diaryData as DiaryEntry[]
 // const diaries:  Array<DiaryEntry>= diaryData // ".tsx" , ".ts" , ".js" , ".json" // 1
 
 export const getEntries = (): DiaryEntry[] => diaries
-export const fintById = (id: number): DiaryEntry | undefined => {
+export const fintById = (id: number): NonSensitiveDiaryEntry | undefined => {
   const entry = diaries.find((d) => d.id === id)
-  return entry
+  if (entry != null) {
+    console.log(entry)
+    const { comment, ...entryWithoutComment } = entry
+    return entryWithoutComment
+  }
+  return undefined
 }
 export const getEntriesWithoutSesitiveInfo = (): NonSensitiveDiaryEntry[] => {
   return diaries.map(({ id, date, weather, visibility }) => ({
