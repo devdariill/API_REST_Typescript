@@ -1,4 +1,5 @@
-import { DiaryEntry, Visibility, Weather } from '../types'
+import { Visibility, Weather } from '../enums'
+import { DiaryEntry } from '../types'
 
 const diariEntries: DiaryEntry[] = [
   {
