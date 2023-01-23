@@ -10,7 +10,7 @@ pnpm add typescript
     "tsc": "tsc"
 },
 
-pnpm run -- --init //generate tsconfig.ts
+pnpm run -- --init //generate tsconfig.ts || pnpm exec tsc --init
 "noImplicitAny":false,
 "outDir": "./build", 
 "resolveJsonModule":true // import json ts     
