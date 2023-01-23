@@ -14,7 +14,13 @@ pnpm run -- --init //generate tsconfig.ts
 "noImplicitAny":false,
 "outDir": "./build", 
 "resolveJsonModule":true // import json ts     
-
+,
+  "eslintConfig": {
+    "extends": "./node_modules/ts-standard/eslintrc.json",
+    "parserOptions": {
+      "project": "./tsconfig.json"
+    }
+  }
 
 
 ESModules import from
