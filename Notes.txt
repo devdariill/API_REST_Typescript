@@ -1,0 +1,22 @@
+pnpm add typescript
+
+"scripts": {
+    "lint": "ts-standard", // npm run lint
+    "dev": "ts-node-dev src/index.ts",
+    "tsc": "tsc"
+},
+
+pnpm run -- --init //generate tsconfig.ts
+"noImplicitAny":false,
+"outDir": "./build", 
+"resolveJsonModule":true // import json ts     
+
+
+
+ESModules import from
+const x = require('') commonjs
+"noUnusedLocals": true,    
+"noUnusedParameters": true,  
+"noImplicitReturns": true,  
+"noFallthroughCasesInSwitch": true,
+
