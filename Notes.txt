@@ -1,3 +1,5 @@
+https://www.youtube.com/watch?v=ZpY5KdGQvwI&t=2009s&ab_channel=midudev
+
 pnpm add typescript
 
 "scripts": {
