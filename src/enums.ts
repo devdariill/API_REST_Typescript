@@ -1,4 +1,17 @@
-import { Weather, Visibility } from './enums'
+//
+export enum Weather {
+  Sunny = 'sunny',
+  Rainy = 'rainy',
+  Cloudy = 'cloudy',
+  Windy = 'windy',
+  Stormy = 'stormy'
+}
+// export type Weather = 'sunny' | 'rainy' | 'cloudy' | 'windy' | 'stormy'
+export enum Visibility {
+  Good = 'good',
+  Average = 'average',
+  Poor = 'poor'
+}
 // export type Visibility = 'good' | 'average' | 'poor'
 // usada para ser extendida pt 1
 export interface DiaryEntry {
